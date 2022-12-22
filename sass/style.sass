@@ -1,0 +1,102 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Rubik', sans-serif
+
+body,html
+    min-height: 100%
+
+.header
+    position: relative
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 40vh
+    background: url(../images/pattern-bg.png) no-repeat
+    background-size: cover
+    
+    h1
+        text-align: center
+        color: #fff
+        margin-top: .8em
+
+.input-area
+    position: relative
+    display: flex
+    align-items: center
+    margin-top: 1em
+    input
+        cursor: pointer
+        width: 500px
+        height: 3.5em
+        border-radius: 11px
+        border: none
+        outline: none
+        padding: 1em 1.6em
+
+.input-search
+    cursor: pointer
+    position: absolute
+    right: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #000
+    height: 3em
+    width: 50px
+    border-radius: 0 11px 11px 0
+    transition: background-color 0.2s
+        
+    &:hover
+        background-color: #444444
+
+.info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -4em
+    position: absolute
+    z-index: 1000
+    width: 60em
+    height: 9em
+    background: #fff
+    border-radius: 11px
+    padding: 2em
+    padding-right: 5px
+    
+    p
+        color: hsl(0, 0%, 59%)
+        letter-spacing: 2px
+        font-size: .8em
+
+    h2
+        margin-top: .3em
+        color: hsl(0, 0%, 17%)
+        font-size: 1.4em
+
+    .userIsp, .userLocation, .userTime
+        height: 5em
+        padding-left: 1.4em
+        border-left: 1px solid hsla(0, 0%, 59%, 0.3)
+
+    .userIp
+        margin-right: 1em
+        height: 5em
+
+    .userTime
+
+
+    .userIsp
+        margin-right: 1em
+
+
+
+
+
+
+#map
+    height: 60vh
+    width: 100vw
